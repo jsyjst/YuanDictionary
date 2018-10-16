@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#802bff">
+
+
+        <RadioButton
+            android:id="@+id/rb_book_card_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:button="@null"
+            android:text="生词本"
+            android:drawableTop="@drawable/radiobutton_back"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <cn.jsyjst.dictionary.widget.MyListView
+        android:id="@+id/lv_book_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:background="#cececf"
+        android:scrollbars="none"
+    >
+
+    </cn.jsyjst.dictionary.widget.MyListView>
+
+
+</LinearLayout>

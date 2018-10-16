@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--生词本卡片listView所用的背景-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="15dp"
+        android:right="15dp"
+        android:bottom="15dp"
+        android:top="15dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+
+            <corners
+                android:bottomLeftRadius="6dip"
+                android:bottomRightRadius="6dip"
+                android:topLeftRadius="6dip"
+                android:topRightRadius="6dip" />
+        </shape>
+    </item>
+</layer-list>

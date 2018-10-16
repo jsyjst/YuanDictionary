@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_widget_dictionary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/linear_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_widget"
+       >
+
+        <TextView
+            android:id="@+id/btn_dictionary"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_edittext"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="请输入需要翻译的单词或中文"
+            android:textColor="#a0a5a4" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/imageview_line"
+            android:layout_marginLeft="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

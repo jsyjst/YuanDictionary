@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RL_allDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="查询历史"
+            android:textColor="#a0a5a4" />
+
+        <ImageButton
+            android:id="@+id/im_all_history_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:src="@drawable/imagebutton_all_history_delete" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        >
+
+    </ListView>
+
+</LinearLayout>

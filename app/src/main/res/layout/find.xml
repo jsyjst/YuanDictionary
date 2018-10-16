@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#802bff">
+
+        <Button
+            android:id="@+id/btn_dictionary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_edittext"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="请输入需要翻译的单词或中文"
+            android:textColor="#a0a5a4"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_day_sentence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_day_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日一句"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="戳戳图，开心学英语"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageButton
+            android:id="@+id/im_day_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"/>
+
+
+
+    </LinearLayout>
+    <!--下面一个布局是没网时并且本地没有每日一句的照片时就显示出来的布局-->
+    <LinearLayout
+        android:id="@+id/linear_day_sentence_no_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/imageview_no_network" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="网络不可用，获取不到每日一句，请检查设置(^_^)" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+
+        >
+
+        <ImageButton
+            android:id="@+id/im_history"
+            android:background="#ffffff"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/imagebutton_history"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/im_book"
+            android:background="#ffffff"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/imagebutton_new_word"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="120dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--点击时显示紫色的照片-->
+    <item android:state_checked="true"  android:drawable="@drawable/radiobutton_find_click" />
+    <!--正常的话显示灰色的照片-->
+    <item android:state_checked="false" android:drawable="@drawable/radiobutton_find_normal" />
+</selector>

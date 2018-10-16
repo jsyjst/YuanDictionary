@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#802bff">
+
+
+        <EditText
+            android:id="@+id/edit_fan_yi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_edittext"
+            android:gravity="left|center"
+            android:hint="请输入需要翻译的单词或中文"
+            android:textSize="15sp"
+            android:maxLength="16"
+            android:paddingLeft="50dp"
+            android:textColor="#2b2b2b"
+            android:textColorHint="#a0a5a4" />
+
+        <ImageButton
+            android:id="@+id/im_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="23dp"
+            android:background="#ffffff"
+            android:src="@drawable/imagebutton_back" />
+
+
+        <ImageButton
+
+            android:id="@+id/im_delete_word"
+            android:layout_alignParentEnd="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="27dp"
+            android:background="#ffffff"
+            android:src="@drawable/imagebutton_delete"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_alignParentEnd="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="57dp"
+            android:layout_marginTop="27dp"
+            android:background="#ffffff"
+            android:src="@drawable/imageview_line" />
+
+        <ImageButton
+            android:id="@+id/im_seek"
+            android:layout_alignParentEnd="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="27dp"
+            android:background="#ffffff"
+            android:src="@drawable/imagebutton_seek" />
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--生词本界面有两个按钮使用这个边框背景-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--底层使用紫色填充色-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#802bff"/>
+            <corners
+                android:bottomLeftRadius="10dip"
+                android:bottomRightRadius="10dip"
+                android:topLeftRadius="10dip"
+                android:topRightRadius="10dip" />
+        </shape>
+    </item>
+
+    <!--上面一层距离底层的顶部1dp,距离底部1dp,类似marginTop,填充色为白色，这样就形成了一个带有蓝色顶部边线和底部边线的白色背景的图-->
+    <item android:bottom="1dp"
+        android:top="1dp"
+        android:left="1dp"
+        android:right="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/>
+            <corners
+                android:bottomLeftRadius="10dip"
+                android:bottomRightRadius="10dip"
+                android:topLeftRadius="10dip"
+                android:topRightRadius="10dip" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_day_sentence"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        >
+        <RadioButton
+            android:id="@+id/rb_day_sentence_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton_back"
+            android:text="每日一句"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <!--将显示不出来的词霸小编用滑动来显示-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7f7f7"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f7f7f7"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_text"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_sentence_dateline"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#302a2a"
+                        android:textSize="25sp" />
+
+                    <ImageButton
+                        android:id="@+id/im_sentence_player"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="27dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/imagebutton_sentence_play" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_sentence_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="7"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:lineSpacingExtra="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_sentence_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="7"
+                    android:textColor="#2b2b2b"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="5dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_translation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="3dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

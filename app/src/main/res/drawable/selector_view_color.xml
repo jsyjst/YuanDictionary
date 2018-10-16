@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--点击时显示紫色的字体-->
+    <item android:state_checked="true" android:color="#802bff"/>
+    <!--正常的话显示灰色的字体-->
+    <item android:state_checked="false" android:color="#8f8f8f"/>
+</selector>
